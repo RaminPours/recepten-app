@@ -1,0 +1,52 @@
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.detail img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.detail h2 {
+  margin-bottom: 10px;
+}
+
+.detail button {
+  margin-right: 10px;
+  padding: 10px 12px;
+  border: none;
+  background-color: #ee3e3e;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.detail button:hover {
+  background-color: #555;
+}
+
+.page-list, .favo-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 36 
+}
+
+.cat{
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.geen-recept{
+  font-size: 40px;
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+}
