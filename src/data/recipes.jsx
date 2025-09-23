@@ -1,55 +1,58 @@
 const recipes = [
-// India
-{
-id: 1,
-title: "Butter Chicken",
-country: "India",
-image: "https://miljuschka.nl/wp-content/uploads/2025/08/Indiase-butter-chicken.jpg",
-ingredients: ["Kip", "Boter", "Tomatenpuree", "Garam masala", "Room"],
-steps: "Bak kip met kruiden, voeg tomatensaus en room toe. Laat sudderen. Serveer met rijst."
-},
-{
-id: 2,
-title: "Chana Masala",
-country: "India",
-image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800&auto=format&fit=crop",
-ingredients: ["Kikkererwten", "Ui", "Knoflook", "Gember", "Tomaat", "Kruiden"],
-steps: "Fruit ui/knoflook, voeg kruiden en tomaat toe, laat kikkererwten mee pruttelen."
-},
-// Mexico
-{
-id: 3,
-title: "Tacos",
-country: "Mexico",
-image: "https://gran.luchito.com/wp-content/uploads/2024/09/Landscape-Hero-Beef-tacos.jpg",
-ingredients: ["Tortilla", "Gehakt", "Sla", "Tomaat", "Kaas"],
-steps: "Bak gehakt met kruiden, vul tortilla's, voeg toppings toe."
-},
-{
-id: 4,
-title: "Guacamole",
-country: "Mexico",
-image: "https://www.francoislambert.one/cdn/shop/articles/authentic_guacamole.webp?v=1715355125",
-ingredients: ["Avocado", "Limoen", "Ui", "Koriander", "Zout"],
-steps: "Prak avocado, meng met limoensap, gesnipperde ui en koriander."
-},
-// Italië
-{
-id: 5,
-title: "Pizza Margherita",
-country: "Italië",
-image: "https://i0.wp.com/cookingitalians.com/wp-content/uploads/2024/11/Margherita-Pizza.jpg?fit=1344%2C768&ssl=1",
-ingredients: ["Pizzadeeg", "Tomatensaus", "Mozzarella", "Basilicum"],
-steps: "Beleg deeg met saus en mozzarella, bak heet af, garneer met basilicum."
-},
-{
-id: 6,
-title: "Pasta Carbonara",
-country: "Italië",
-image: "https://static.ah.nl/static/recepten/img_RAM_PRD122191_1224x900_JPG.jpg",
-ingredients: ["Spaghetti", "Eieren", "Pecorino", "Guanciale", "Peper"],
-steps: "Bak guanciale, meng eieren/kaas, schep met hete pasta zonder te stollen."
-},
+    // India
+    {
+    id: 1,
+    title: "Butter Chicken",
+    country: "India",
+    image: "https://miljuschka.nl/wp-content/uploads/2025/08/Indiase-butter-chicken.jpg",
+    ingredients: ["Kip", "Boter", "Tomatenpuree", "Garam masala", "Room"],
+    steps: "Bak kip met kruiden, voeg tomatensaus en room toe. Laat sudderen. Serveer met rijst."
+    },
+    {
+    // India
+    id: 2,
+    title: "Chana Masala",
+    country: "India",
+    image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800&auto=format&fit=crop",
+    ingredients: ["Kikkererwten", "Ui", "Knoflook", "Gember", "Tomaat", "Kruiden"],
+    steps: "Fruit ui/knoflook, voeg kruiden en tomaat toe, laat kikkererwten mee pruttelen."
+    },
+    // Mexico
+    {
+    id: 3,
+    title: "Tacos",
+    country: "Mexico",
+    image: "https://gran.luchito.com/wp-content/uploads/2024/09/Landscape-Hero-Beef-tacos.jpg",
+    ingredients: ["Tortilla", "Gehakt", "Sla", "Tomaat", "Kaas"],
+    steps: "Bak gehakt met kruiden, vul tortilla's, voeg toppings toe."
+    },
+    {
+    // Mexico
+    id: 4,
+    title: "Guacamole",
+    country: "Mexico",
+    image: "https://www.francoislambert.one/cdn/shop/articles/authentic_guacamole.webp?v=1715355125",
+    ingredients: ["Avocado", "Limoen", "Ui", "Koriander", "Zout"],
+    steps: "Prak avocado, meng met limoensap, gesnipperde ui en koriander."
+    },
+    // Italië
+    {
+    id: 5,
+    title: "Pizza Margherita",
+    country: "Italië",
+    image: "https://i0.wp.com/cookingitalians.com/wp-content/uploads/2024/11/Margherita-Pizza.jpg?fit=1344%2C768&ssl=1",
+    ingredients: ["Pizzadeeg", "Tomatensaus", "Mozzarella", "Basilicum"],
+    steps: "Beleg deeg met saus en mozzarella, bak heet af, garneer met basilicum."
+    },
+    {
+    // Italië
+    id: 6,
+    title: "Pasta Carbonara",
+    country: "Italië",
+    image: "https://static.ah.nl/static/recepten/img_RAM_PRD122191_1224x900_JPG.jpg",
+    ingredients: ["Spaghetti", "Eieren", "Pecorino", "Guanciale", "Peper"],
+    steps: "Bak guanciale, meng eieren/kaas, schep met hete pasta zonder te stollen."
+    },
 {
     // India
     id: 7,
@@ -114,6 +117,51 @@ steps: "Bak guanciale, meng eieren/kaas, schep met hete pasta zonder te stollen.
     steps: "Bak friet, gooi er vlees en kaas. Enjoy"
 },
 
+{
+    //Peru
+    id: 14,
+    title: "Ceviche",
+    country: "Peru",
+    image: "https://cravingsjournal.com/wp-content/uploads/2018/08/ceviche-con-leche-de-tigre-2.jpg",
+    ingredients: ["Uien", "Mais", "Vis", "Limoen", "Zoete aardappel", "Zout & Peper"],
+    steps: "Snijd vis in kleine stukjes, voeg de rest van de ingredienten to en serveer"
+},
+
+{ // Turkije
+    id: 15,
+    title: "Kofte",
+    country: "Turkije",
+    image: "https://farm2.staticflickr.com/1583/24783788585_98abb04f80_b.jpg",
+    ingredients: ["Gehakt", "Turkse kruiden", "Knoflook & ui"],
+    steps: "Snijd ui & de rest in stukjes, doe gehakt in een grote kom en mix alles, zet het in de koelkast voor 30 min & daarna in de oven voor 20min op 180gr"
+},
+{
+    //Spanje
+    id: 16,
+    title: "Paella",
+    country: "Spanje",
+    image: "https://tastesbetterfromscratch.com/wp-content/uploads/2020/04/Paella-7.jpg",
+    ingredients: ["Rijst", "Schaaldieren & vis", "Saffraan", "Kip", "Paprika", "Olijfolie", "Spaanse kruiden"],
+    steps: "Verhit olijfolie in een pan, bak kip, week saffraan, voeg de schaaldieren in een kom en mix alles, Voeg de risottorijst toe aan de pan en laat op middelhoog vuur 25 minuten meegaren",
+},
+{
+    //Duitsland
+    id: 17,
+    title: "Currywurst",
+    country: "Duitsland",
+    image: "https://img.freepik.com/premium-photo/duitse-curryworst-met-friet-geserveerd-in-een-stalen-plaat-zwarte-achtergrond-bovenaanzicht_89816-42998.jpg",
+    ingredients: ["Vlees", "Currysaus"],
+    steps: "Bak of grill de braadworst in een pan of bbq, breng de saus op smaak met bijv sojasaus, snijd de worst in plakjes, gooi er flink wat saus erover, eet smakelijk",
+},
+{
+    //Verenigde Staten
+    id: 18,
+    title: "Mississippi Chicken Skewers",
+    country: "Verenigde Staten",
+    image: "https://www.kingsford.com/wp-content/uploads/2024/09/32717_Chicken-Kebabs_001_i05-desktop.jpg?nocache=1",
+    ingredients: ["Kip", "Zout & Peper", "Speciale bbq kruiden", "Boter", "Olijfolie", "Ui"],
+    steps: "Marineer je kippenstukjes, rode ui en pepperoncini in een mengsel van ranch dressing mix, au jus seasoning en peperoncini-pekel. Rijg ze vervolgens op spiesen, gril ze op medium-hoog vuur en bak ze kort in de oven om ze te garen. Bereid ondertussen een saus met gesmolten boter, de resterende kruiden en pekel, en serveer de saus bij de gegrilde en gebakken spiesjes",
+}
 ];
 
 

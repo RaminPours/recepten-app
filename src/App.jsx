@@ -13,22 +13,25 @@ import "./styles/App.css"
 
 export default function App() {
 
+//favorieten ophalen
 const [favoriteIds, setFavoriteIds] = useState(
   JSON.parse(localStorage.getItem("favoriteIds")) || []
 );
 
-
+//favorieten opslaan in geheugen
 useEffect(() => {
 localStorage.setItem("favoriteIds", JSON.stringify(favoriteIds));
 }, [favoriteIds]);
 
 
+// recept toevoegen aan favorieten
 const addFavoriteAndGo = (id, navigate) => {
-setFavoriteIds((prev) => (prev.includes(id) ? prev : [...prev, id]));
+setFavoriteIds((prev) => 
+(prev.includes(id) ? prev : [...prev, id]));
 navigate("/favorieten");
 };
 
-
+// verwijderen uit favorieten of toevoegen 
 const toggleFavorite = (id) => {
 setFavoriteIds((prev) =>
 prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]
@@ -41,10 +44,13 @@ return (
 <Navbar />
 
 <Routes>
-<Route path="/" element={<RecipesPage recipes={recipes} />} />
+<Route 
+// Startpagina met alle recepten
+path="/" element={<RecipesPage recipes={recipes} />} />
 
 
 <Route
+// details over een recept
 path="/recept/:id"
 element={
 <RecipeDetail
@@ -58,13 +64,18 @@ addFavoriteAndGo={addFavoriteAndGo}
 
 
 <Route
+// favorieten pagina
 path="/favorieten"
 element={<FavoritesPage recipes={recipes} favoriteIds={favoriteIds} />}
 />
 
 
-<Route path="/categories" element={<CategoriesPage />} />
-<Route path="/categorie/:land" element={<CategoryRecipesPage recipes={recipes} />} />
+<Route 
+// Aantal landen
+path="/categories" element={<CategoriesPage />} />
+<Route 
+// Land met recepten
+path="/categorie/:l" element={<CategoryRecipesPage recipes={recipes} />} />
 
 </Routes>
 </div>

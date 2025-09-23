@@ -12,6 +12,7 @@ const categories = [
 { name: "Spanje"},
 { name: "Turkije"},
 { name: "Peru"},
+{ name: "Verenigd Arabische Emiraten"},
 ];
 
 
