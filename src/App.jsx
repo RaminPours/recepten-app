@@ -48,7 +48,6 @@ return (
 // Startpagina met alle recepten
 path="/" element={<RecipesPage recipes={recipes} />} />
 
-
 <Route
 // details over een recept
 path="/recept/:id"
@@ -61,7 +60,6 @@ addFavoriteAndGo={addFavoriteAndGo}
 />
 }
 />
-
 
 <Route
 // favorieten pagina

@@ -16,7 +16,6 @@
   max-height: 400px;
   border-radius: 30px;
   margin-top: 40px;
-  object-fit: cover;
 }
 
 .detail button {
@@ -45,8 +44,12 @@
   gap: 5px;
 }
 
-.favo-page{
+.favo-page {
   height: 100vh;
+}
+
+.favo-h2{
+  text-align: center;
 }
 
 .cat{
@@ -63,8 +66,10 @@
 }
 
 .geen-recept{
+  display: flex;
+  align-items: center;
   font-size: 40px;
-  margin: 100px;
   display: flex;
   justify-content: center;
+  height: 100vh;
 }
